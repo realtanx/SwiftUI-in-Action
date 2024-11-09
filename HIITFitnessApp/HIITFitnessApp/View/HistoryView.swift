@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HistoryView: View {
     
+    @Binding var showHistory: Bool
+    
     let today = Date()
     let yesterday = Date().addingTimeInterval(-86400)
     let dateFormatter = "MM / dd"
@@ -34,11 +36,11 @@ struct HistoryView: View {
                 }
             }
             
-            Button(action: {}) {
+            Button(action: { showHistory.toggle() }) {
                 Image(systemName: "xmark.circle")
             }
             .font(.title)
-            .padding(.trailing)
+            .padding()
             .tint(.black)
             
         }
@@ -46,5 +48,5 @@ struct HistoryView: View {
 }
 
 #Preview {
-    HistoryView()
+    HistoryView(showHistory: .constant(true))
 }
