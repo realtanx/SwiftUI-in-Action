@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Exercise {
+struct Exercise: Hashable {
     let name: String
     let video: String
     
