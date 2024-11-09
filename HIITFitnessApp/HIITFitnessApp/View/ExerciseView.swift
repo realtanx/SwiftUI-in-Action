@@ -37,6 +37,7 @@ struct ExerciseView: View {
                 }
                 .padding(.bottom)
             }
+            .frame(width: geometry.size.width, height: geometry.size.height)
         }
     }
 }
