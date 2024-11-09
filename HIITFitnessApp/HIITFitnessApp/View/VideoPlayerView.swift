@@ -24,5 +24,5 @@ struct VideoPlayerView: View {
 }
 
 #Preview {
-    VideoPlayerView(fileName: "")
+    VideoPlayerView(fileName: "step-up")
 }
