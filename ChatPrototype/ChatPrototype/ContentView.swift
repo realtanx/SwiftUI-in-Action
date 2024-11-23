@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        DayForecastExample()
+//        DayForecastExample()
+        
+        OnboardingExample()
     }
 }
 
@@ -24,5 +26,17 @@ struct DayForecastExample: View {
             DayForecast(day: "Tue", high: 60, low: 50, isRainy: false)
             DayForecast(day: "Wed", high: 40, low: 20, isRainy: true)
         }
+    }
+}
+
+struct OnboardingExample: View {
+    var body: some View {
+        TabView {
+            WelcomePage()
+            FeaturesPage()
+        }
+        .background(Gradient(colors: [.orange, .purple]))
+        .tabViewStyle(.page)
+        .foregroundStyle(.white)
     }
 }
