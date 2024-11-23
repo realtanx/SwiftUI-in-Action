@@ -11,7 +11,9 @@ struct ContentView: View {
     var body: some View {
 //        DayForecastExample()
         
-        OnboardingExample()
+//        OnboardingExample()
+        
+        DiceRollerExample()
     }
 }
 
@@ -38,5 +40,46 @@ struct OnboardingExample: View {
         .background(Gradient(colors: [.orange, .purple]))
         .tabViewStyle(.page)
         .foregroundStyle(.white)
+    }
+}
+
+struct DiceRollerExample: View {
+    
+    @State private var numberOfDice: Int = 1
+    
+    var body: some View {
+        VStack {
+            Text("Dice Roller")
+                .font(.largeTitle.lowercaseSmallCaps())
+            
+            HStack {
+                ForEach(1...numberOfDice, id: \.description) { _ in
+                    DiceView()
+                }
+            }
+            
+            HStack {
+                Button("Remove Dice", systemImage: "minus.circle.fill") {
+                    withAnimation {
+                        numberOfDice -= 1
+                    }
+                }
+                .disabled(numberOfDice == 1)
+                .padding()
+                
+                Button("Add Dice", systemImage: "plus.circle.fill") {
+                    withAnimation {
+                        numberOfDice += 1
+                    }
+                }
+                .disabled(numberOfDice == 3)
+                .padding()
+            }
+            .font(.title)
+            .labelStyle(.iconOnly)
+            .padding()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.mint)
     }
 }

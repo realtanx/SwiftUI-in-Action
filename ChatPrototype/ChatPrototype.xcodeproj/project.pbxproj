@@ -15,6 +15,7 @@
 		07FCE1612CF1809C0012E03B /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FCE1602CF1809C0012E03B /* WelcomePage.swift */; };
 		07FCE1632CF1832E0012E03B /* FeaturesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FCE1622CF1832E0012E03B /* FeaturesPage.swift */; };
 		07FCE1652CF184490012E03B /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FCE1642CF184490012E03B /* FeatureCard.swift */; };
+		07FCE1682CF1BF750012E03B /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FCE1672CF1BF750012E03B /* DiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		07FCE1602CF1809C0012E03B /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		07FCE1622CF1832E0012E03B /* FeaturesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesPage.swift; sourceTree = "<group>"; };
 		07FCE1642CF184490012E03B /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
+		07FCE1672CF1BF750012E03B /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				07FCE1562CF164380012E03B /* Preview Content */,
 				07FCE15E2CF17A580012E03B /* DayForecast.swift */,
 				07FCE1662CF1854B0012E03B /* Onboarding */,
+				07FCE1692CF1BF820012E03B /* DiceRoller */,
 			);
 			path = ChatPrototype;
 			sourceTree = "<group>";
@@ -85,6 +88,14 @@
 				07FCE1642CF184490012E03B /* FeatureCard.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		07FCE1692CF1BF820012E03B /* DiceRoller */ = {
+			isa = PBXGroup;
+			children = (
+				07FCE1672CF1BF750012E03B /* DiceView.swift */,
+			);
+			path = DiceRoller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				07FCE1512CF164350012E03B /* ChatPrototypeApp.swift in Sources */,
 				07FCE1632CF1832E0012E03B /* FeaturesPage.swift in Sources */,
 				07FCE1652CF184490012E03B /* FeatureCard.swift in Sources */,
+				07FCE1682CF1BF750012E03B /* DiceView.swift in Sources */,
 				07FCE15F2CF17A580012E03B /* DayForecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
