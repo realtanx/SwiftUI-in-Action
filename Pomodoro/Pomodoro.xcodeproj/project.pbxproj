@@ -10,6 +10,9 @@
 		072CEA1B2D7C42BC00E97418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072CEA1A2D7C42BC00E97418 /* AppDelegate.swift */; };
 		072CEA1F2D7C42BE00E97418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072CEA1E2D7C42BE00E97418 /* Assets.xcassets */; };
 		072CEA222D7C42BE00E97418 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 072CEA212D7C42BE00E97418 /* Base */; };
+		072CEA2A2D7D9C3000E97418 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072CEA292D7D9C3000E97418 /* Task.swift */; };
+		072CEA2C2D7D9D8100E97418 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072CEA2B2D7D9D8100E97418 /* MenuManager.swift */; };
+		072CEA2E2D7DA94900E97418 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072CEA2D2D7DA94900E97418 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +21,9 @@
 		072CEA1E2D7C42BE00E97418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		072CEA212D7C42BE00E97418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		072CEA232D7C42BE00E97418 /* Pomodoro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pomodoro.entitlements; sourceTree = "<group>"; };
+		072CEA292D7D9C3000E97418 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		072CEA2B2D7D9D8100E97418 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		072CEA2D2D7DA94900E97418 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 				072CEA1E2D7C42BE00E97418 /* Assets.xcassets */,
 				072CEA202D7C42BE00E97418 /* Main.storyboard */,
 				072CEA232D7C42BE00E97418 /* Pomodoro.entitlements */,
+				072CEA292D7D9C3000E97418 /* Task.swift */,
+				072CEA2B2D7D9D8100E97418 /* MenuManager.swift */,
+				072CEA2D2D7DA94900E97418 /* TaskView.swift */,
 			);
 			path = Pomodoro;
 			sourceTree = "<group>";
@@ -128,7 +137,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072CEA2C2D7D9D8100E97418 /* MenuManager.swift in Sources */,
+				072CEA2A2D7D9C3000E97418 /* Task.swift in Sources */,
 				072CEA1B2D7C42BC00E97418 /* AppDelegate.swift in Sources */,
+				072CEA2E2D7DA94900E97418 /* TaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var statusItem: NSStatusItem?
+    var menuManager: MenuManager?
     @IBOutlet weak var statusMenu: NSMenu!
     
 
@@ -22,6 +23,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem?.button?.imagePosition = .imageLeading
         statusItem?.button?.image = NSImage(systemSymbolName: "timer", accessibilityDescription: "Pomodoro")
         statusItem?.button?.font = NSFont.monospacedDigitSystemFont(ofSize: NSFont.systemFontSize, weight: .regular)
+        
+        menuManager = MenuManager(statusMenu: statusMenu)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
