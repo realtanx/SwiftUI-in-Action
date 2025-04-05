@@ -82,3 +82,42 @@ default:
     print("Somewhere else")
 }
 
+// external name
+func printSum(_ a: Int, plus b: Int) {
+    print(a + b)
+}
+
+printSum(10, plus: 20)
+
+// pass by value
+var value = 1
+
+func plusOne(_ value: inout Int) {
+    value += 1
+    print("value inside function is \(value)")
+}
+plusOne(&value)
+print(value)
+
+// Overloading
+func getValue(a: Int) {}
+func getValue(b: Int) {}
+func getValue(a: Double) {}
+func getValue(a: Int, b: Int) {}
+func getValue(a: Int) -> Int {
+    return a
+}
+
+func getValue(a: Int) -> String {
+    return "Swift"
+}
+
+let result: String = getValue(a: 1)
+
+func infiniteLoop() -> Never {
+    while true {
+        
+    }
+}
+
+
