@@ -120,4 +120,32 @@ func infiniteLoop() -> Never {
     }
 }
 
+var name: String?
+if name != nil {
+    print(name!)
+}
+
+var age: Int?
+
+name = "Swift"
+age = 35
+
+if let name = name,
+   let age = age,
+   age >= 30 {
+    print("name \(name), age \(age)")
+} else {
+    print("name or age is nil, or age < 30")
+}
+
+func printName(_ name: String?) {
+    guard let name = name else {
+        return
+    }
+    
+    print(name)
+}
+
+
+
 
